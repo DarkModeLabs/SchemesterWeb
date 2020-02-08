@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="84mm"
-   height="181mm"
-   viewBox="0 0 84 181"
+   width="72mm"
+   height="95mm"
+   viewBox="0 0 72 95"
    version="1.1"
    id="svg8"
-   sodipodi:docname="schemesterLightMockupReal.svg"
+   sodipodi:docname="schemesterLightMockupRealHalf.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <defs
      id="defs2">
@@ -41,38 +41,6 @@
          offset="1"
          id="stop834" />
     </linearGradient>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:label="Drop Shadow"
-       id="filter2804">
-      <feFlood
-         flood-opacity="0.498039"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         id="feFlood2794" />
-      <feComposite
-         in="flood"
-         in2="SourceGraphic"
-         operator="in"
-         result="composite1"
-         id="feComposite2796" />
-      <feGaussianBlur
-         in="composite1"
-         stdDeviation="6.3"
-         result="blur"
-         id="feGaussianBlur2798" />
-      <feOffset
-         dx="0"
-         dy="1.6"
-         result="offset"
-         id="feOffset2800" />
-      <feComposite
-         in="SourceGraphic"
-         in2="offset"
-         operator="over"
-         result="composite2"
-         id="feComposite2802" />
-    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -81,9 +49,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="71.316329"
-     inkscape:cy="353.07247"
+     inkscape:zoom="1"
+     inkscape:cx="263.3707"
+     inkscape:cy="273.32043"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -110,11 +78,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-116)">
+     transform="translate(0,-202)">
     <g
        id="g1962"
-       style="filter:url(#filter2804)"
-       transform="translate(6.6751683,-14.664315)">
+       transform="translate(0,58.208333)">
       <rect
          ry="5.4429164"
          y="146.27974"
