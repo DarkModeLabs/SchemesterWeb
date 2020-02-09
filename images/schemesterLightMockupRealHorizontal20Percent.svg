@@ -15,8 +15,8 @@
    viewBox="0 0 50 75"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="schemesterLightMockupRealHorizontal20Percent.svg">
+   sodipodi:docname="schemesterLightMockupRealHorizontal20Percent.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <defs
      id="defs2">
     <clipPath
@@ -43,7 +43,7 @@
          y="6.4809585" />
     </clipPath>
     <linearGradient
-       gradientTransform="matrix(0,-0.53804532,0.62596125,0,-41.576398,138.13259)"
+       gradientTransform="matrix(0,-0.53804532,0.62596125,0,-10.573128,315.85072)"
        inkscape:collect="always"
        xlink:href="#linearGradient836"
        id="linearGradient838"
@@ -114,9 +114,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="120.29848"
-     inkscape:cy="199.32374"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="280.23757"
+     inkscape:cy="205.94027"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -144,45 +144,45 @@
      id="layer1"
      transform="translate(0,-222)">
     <g
-       style="filter:url(#filter1873)"
-       id="g1549"
-       transform="translate(31.00327,177.71813)">
+       id="g1955"
+       style="opacity:0.386">
       <rect
-         transform="rotate(-90)"
+         transform="rotate(-90,104.3607,73.35743)"
          ry="5.4426455"
          y="-26.573317"
          x="-118.69756"
          height="149.43309"
          width="72.909332"
          id="rect815"
-         style="opacity:1;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.57283407;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers" />
+         style="opacity:1;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.57283407;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter1873)" />
       <path
-         d="M -23.266539,109.71432 V 54.045218 c 0,-3.817029 0.80828,-6.491295 5.104327,-6.49925 L 113.76245,47.301796 c 4.29603,-0.0082 6.21649,2.926393 6.21649,6.743422 v 55.669102 c 0,3.81704 -1.81878,6.81866 -6.11484,6.82087 l -133.540767,0.0691 c -4.296056,0.002 -3.589872,-3.0729 -3.589872,-6.88995 z"
-         style="opacity:1;fill:url(#linearGradient838);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.54737782;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers"
+         d="m 7.736731,287.43245 v -55.6691 c 0,-3.81703 0.80828,-6.4913 5.104327,-6.49925 l 131.924662,-0.24417 c 4.29603,-0.008 6.21649,2.92639 6.21649,6.74342 v 55.6691 c 0,3.81704 -1.81878,6.81866 -6.11484,6.82087 l -133.540767,0.0691 c -4.296056,0.002 -3.589872,-3.0729 -3.589872,-6.88995 z"
+         style="opacity:1;fill:url(#linearGradient838);fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.54737782;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter1873)"
          id="rect815-4"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cssssssssc" />
       <rect
-         transform="rotate(-90)"
+         transform="rotate(-90,104.3607,73.35743)"
          ry="0.53232753"
          y="-25.540958"
          x="-93.028023"
          height="1.0646551"
          width="14.555741"
          id="rect844"
-         style="opacity:1;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.62102771;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers" />
+         style="opacity:1;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.62102771;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter1873)" />
       <ellipse
-         transform="rotate(-90)"
+         transform="rotate(-90,104.3607,73.35743)"
          ry="0.93315476"
          rx="0.91856855"
          cy="-25.053158"
          cx="-76.383575"
          id="path846"
-         style="opacity:1;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.6324448;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers" />
+         style="opacity:1;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.6324448;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter1873)" />
       <g
          clip-path="url(#clipPath1522)"
-         transform="matrix(0.2468996,0,0,0.2468996,-43.508642,45.264193)"
-         id="g1401">
+         transform="matrix(0.2468996,0,0,0.2468996,-12.505372,222.98232)"
+         id="g1401"
+         style="filter:url(#filter1873)">
         <path
            inkscape:connector-curvature="0"
            id="path1417"

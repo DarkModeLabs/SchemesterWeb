@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-
         <title>Schemester</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-16LE">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +15,11 @@
     <style>
         html{
             scroll-behavior: smooth;
+            position: relative;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
         }
         .description{
             font-family: 'Poppins', sans-serif;
@@ -27,7 +31,8 @@
         
         .display-large{
             font-family: 'Poppins', sans-serif;
-            font-size: 68px;
+            font-size: 62px;
+            text-align: left;
             font-weight:  bold;
             padding-left: 22px;
         }
@@ -59,24 +64,43 @@
         .navigator{
             padding: 12px;
         }
+        .headImage{
+            background: url('images/schemesterLightMockupRealHorizontal20Percent.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position-y: top;
+        }
+        .moonImage{
+            background: url('images/Moon.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position-y: top;
+            background-size: 50%;
+        }
+        .sunImage{
+            background: url('images/sunIconSmall.svg');
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: right;
+            background-position-y: top;
+        }
     </style>
     <body>
-    <div  class="back-ground fmt-hide-large fmt-hide-medium">
+    <div  class="back-ground fmt-hide-large fmt-col">
         <div class="fmt-top navigator " id="nav">
-            <span class="fmt-left">
-            </span>
             <a href="#row0">
-            <span class="fmt-right fmt-ripple-soft">
+            <span class="fmt-left fmt-ripple-soft">
             <img src="images/schemestericonupdated-jazz.svg" width="50px"/>
             </span>
             </a>
         </div>
 
-        <div class="fmt-row" style="padding-top: 22mm;" id="row0">
-            <p class="display-large" style="color:white">
+        <div class="fmt-row sunImage" style="padding-top: 22mm;" id="row0">
+            <p class="display-large" style="color:white;">
                 Your<br />schedule,<br/>simplified.
             </p>
         </div>
+
         <div class="fmt-row action-text" style="color:white; padding-right: 32px; padding-left: 32px;padding-top: 32px;" id="row1">
             <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk">
             <span class="fmt-btn fmt-ripple-soft fmt-left" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;">
@@ -84,7 +108,7 @@
             </span>
             </a>
             <span class="fmt-btn fmt-right fmt-ripple-soft" style=" padding: 12px 24px 12px 24px;border-radius: 12px;">
-                <a href="#row2">Why?</a>
+                <a href="#row2">How?</a>
             </span>
         </div>
         <div class="fmt-center fmt-row" style="margin-top: 24mm;padding-top: 24mm;" id="row2">
@@ -107,18 +131,18 @@
             <p class="display-large" style="color:white">
                 The <br />app you<br/>wished for.
             </p>
-            <div class="fmt-row" style="padding-right: 12px;">
-                <div class="fmt-col s2 fmt-left">
-                    <object type="image/svg+xml" data="images/schemesterLightMockupRealFullScreenRightHalf.svg" width="160px"></object>
+        </div>
+        <div class="fmt-row" style="padding-right: 22px;" id="row4">
+            <div class="fmt-col s3 fmt-left">
+                <object class="fmt-left" type="image/svg+xml" data="images/schemesterLightMockupRealFullScreenRightHalf.svg" width="100%"></object>
+            </div>
+            <div class="fmt-right fmt-col s8" style="vertical-align: middle;">
+                <div class="sub-text" style="color: white;">
+                    <p>Simply Accessible</p>
                 </div>
-                <div class="fmt-right fmt-col s7 sub-text" style="color: white;">
-                    <p>
-                        Simply Accessible
-                    </p>
-                </div>
-                <div class="description fmt-right fmt-col s7" style="color: white;">
+                <div class="description" style="color: white;">
                     <p> With simplicity and user friendliness as the core values during development,
-                    the result is a seamless and hassle free UI.</p>
+                        the result is a seamless and hassle free UI.</p>
                 </div>
             </div>
         </div>
@@ -126,14 +150,18 @@
             <div class="fmt-col s3 fmt-right">
                 <object class="fmt-right" type="image/svg+xml" data="images/schemesterLightMockupRealFullScreenLeftHalf.svg" width="70px"></object>
             </div>
-            <div class="fmt-left fmt-col s9 sub-text" style="color: white; margin-top: 12mm;">
-                <p>Neat & Clean.</p>
-            </div>
-            <div class="description fmt-left fmt-col s9" style="color: white;">
-                <p> The app features a Clean, Intuitive and Accessible UI that focusses on getting the job done.</p>
+            <div class="fmt-left fmt-col s9" style="vertical-align: middle;">
+                <div class="sub-text" style="color: white;">
+                    <p>Neat & Clean.</p>
+                </div>
+                <div class="description" style="color: white;">
+                    <p> The app features a Clean, Intuitive and Accessible UI that focusses on getting the job done.</p>
+                    <br/>
+                    <p>Everything will always be under your finger tips.</p>
+                </div>
             </div>
         </div>
-        <div class="fmt-row" style="margin-top: 14mm;" id="row5">
+        <div class="fmt-row moonImage" style="margin-top: 14mm;" id="row5">
             <p class="display-large fmt-left" style="color:white">
                 Feels <br />better with<br/>dark mode.
             </p>
@@ -180,43 +208,70 @@
                 </p>
             </div>
         </div>
-        <div class="fmt-row" style="margin-top: 14mm;" id="row7">
+        <div id="row7">
             <p class="display-med fmt-center" style="color:white">
                 And much more.
             </p>
-            <p class="display-large fmt-left" style="color:white">
-                So,<br />what is<br/> this actually?
-            </p>
-            <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                A project
-            </div>
-            <p class="fmt-center description" style="color: white;padding: 22px;">
-                targeting students of Deshbandhu College, University of Delhi<br/>
-                Initally for Physics Hons. students of 2018 batch.
-            </p>
-            
-            <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                For the purpose
-            </div>
-            <p class="fmt-center description" style="color: white;padding: 22px;">
-                of making schedule management easy and impressive,<br/> abandoning classical way of providing and following college schedule.
-                <br/>Making it easier for both students and teachers to comprehend according to time table.
-            </p>
-            <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                An initiative
-            </div>
-            <p class="fmt-center description" style="color: white;padding: 22px;">
-                by a student among the targeted audience<br/>namely <a href="https://www.github.com/ranjanistic/" class="fmt-hover-blue" style="color: aqua;">Priyanshu Ranjan</a>.
-            </p>
-            
-            <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                With support
-            </div>
-            <p class="fmt-center description" style="color: white;padding: 22px;">
-                from <a href="https://www.github.com/darkmodelabs" class="fmt-hover-blue" style="color:aqua">Dark mode labs</a>
-            </p>
         </div>
-        <div class="fmt-center">
+        <div class="fmt-row" style="margin-top: 14mm;" id="row8">
+            <p class="display-large" style="color:white;">
+                People<br />humming<br/>about this.
+            </p>
+            <div class="fmt-center fmt-card fmt-shadow" style="background-color: #1c4eff;border-radius: 22px 22px 0px 22px; color: white; margin: 44px;padding: 22px 18px 22px 18px;">
+                <div>
+                    <p class="display-small">Great initiative! Loved this application!"</p>   
+                </div>
+                <div>
+                    <p class="description" style="text-align: right;">- Jasvinder Mehla,<br><span style="font-size: 12px;">Student, DBC DU (2020)</span></p>   
+                </div>
+            </div>
+        </div>
+        
+        <div class="fmt-row" style="margin-top: 14mm;" id="row9">
+            <br/><br/>
+            <div class="display-large headImage" style="color:white;">
+                So,<br />what is<br/> this actually?
+                <br/><br/>
+            </div>
+            <div class="fmt-row fmt-center">
+                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                    A project
+                </div>
+                <p class="fmt-center description" style="color: white;padding: 22px;">
+                    targeting students of Deshbandhu College, University of Delhi<br/>
+                    Initally for Physics Hons. students of 2018 batch.
+                </p>
+                <br/><br/>
+                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                    For the purpose
+                </div>
+                <p class="fmt-center description" style="color: white;padding: 22px;">
+                    of making schedule management easy and impressive,<br/> abandoning classical way of providing and following college schedule.
+                    <br/>Making it easier for both students and teachers to comprehend according to time table.
+                </p>
+                <br/><br/>
+                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                    An initiative
+                </div>
+                <object class="" type="image/svg+xml" data="images/bulbIcon.svg" width="50%"></object>
+                <p class="fmt-center description" style="color: white;padding: 22px;">
+                    by a student among the targeted audience<br/>namely <a href="https://www.github.com/ranjanistic/" class="fmt-hover-blue" style="color: aqua;">Priyanshu Ranjan</a>.
+                </p>
+                <br/><br/>
+                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                    With support
+                </div>
+                <br/><br/>
+
+                <img src="images/person_1.jpg" class="fmt-circle fmt-shadow" width="50%"/>                
+                <p class="fmt-center description" style="color: white;padding-left: 22px;padding-right: 22px;">
+                    from <a href="https://www.github.com/darkmodelabs" class="fmt-hover-blue" style="color:aqua">Dark mode labs</a>
+                </p>
+            </div>
+        </div>
+        <br/><br/>
+        
+        <div class="fmt-center" id="rowend">
             <div>
                 <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk">
                     <span class="fmt-btn fmt-ripple-soft action-text" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;">
