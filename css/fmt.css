@@ -117,7 +117,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .fmt-card-4,.fmt-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 .fmt-hover-shadow-teal:hover{box-shadow:0 4px 10px 0 rgb(2, 223, 204),0 4px 20px 0 rgb(2, 182, 152)}
 .fmt-hover-shadow-indigo:hover{box-shadow:0 4px 10px 0 rgb(52, 87, 201),0 4px 20px 0 rgb(51, 91, 177)}
-
+.fmt-shadow{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 .fmt-spin{animation:fmt-spin 2s infinite linear}@keyframes fmt-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
 .fmt-spin-fast{animation:fmt-spin 0.5s infinite linear}@keyframes fmt-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
 .fmt-spin-slow{animation:fmt-spin 4s infinite linear}@keyframes fmt-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}

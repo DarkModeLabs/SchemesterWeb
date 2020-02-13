@@ -13,6 +13,7 @@
         <link rel = "stylesheet" href="css/main_setup.css">
         <script src="script/default.js"></script>
     </head>
+
     <style>
         .back-ground{
             background: url('images/schemBackGround.svg');
@@ -21,11 +22,18 @@
             height: 100%;
             background-color: #000;
         }
+        .databaseImg{
+    background: url('images/lockedDatabase.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right;
+    background-position-y: top;
+}
     </style>
         <div id="menu" class="sidenav sub-text"> 
             <span class="sub-text" style="color:white; opacity: 0.2;">Navigate</span>
-            <a href="test.html"id="homeTab">Home</a>
-            <a href="authloginpage.html">Auth login</a>
+            <a href="test.html" id="homeTab">Home</a>
+            <a href="#"  onclick="menu_close()" style="background-color: #2a7fffff;">Auth login</a>
             <br/>
             <span class="sub-text" style="color:white; opacity: 0.2;">Users</span>
             <a href="error404.html">Student</a>
@@ -42,17 +50,46 @@
             <a href="javascript:void(0)" class="closebtn" onclick="menu_close()">&times;</a>
         </div>
     <body class="back-ground fmt-hide-large"  onscroll="menu_close()"> 
-        <div class="fmt-bottom navigator" id="nav" >
-            <span class="fmt-right fmt-ripple-soft" id="menu_icon" onclick="menu_open()">
+        <div class="fmt-top fmt-right navigator" id="nav">
+            <a href="#" class="fmt-left fmt-ripple-soft" id="menu_icon" onclick="menu_open()">
                 <img src="images/schemestericonupdated-jazz.svg" width="50px"/>
-            </span>
+            </a>
         </div>
         <div  class="fmt-col" id="main_frame" >
-            <div class="fmt-row sunImage" style="padding-top: 22mm;" id="row0" onclick="menu_close()">
+            <div class="fmt-row databaseImg" style="padding-top: 22mm;" id="row0" onclick="menu_close()">
                 <p class="display-large" style="color:white;">
-                    Thank<br />you for<br/>downloading.
+                    Fill up<br />your<br/>credentials.
                 </p>
             </div>
+            <form action="error404.html">
+            <div style="padding-left: 22px;padding-right: 22px;">
+                <fieldset>
+                    <legend>Username</legend>
+                    <input required="true" type="text">
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <legend>College</legend>
+                    <select required="true" name="College" id="college_selector">
+                        <option value="null"></option>
+                        <option value="DBC-DU">Deshbandhu College</option>
+                    </select>
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <legend>Password</legend>
+                    <input required="true" type="password">
+                </fieldset>
+                <br/><br/>
+                <button class="button-submit" type="submit">Proceed</button>
+                <br/><br/>
+                <div class="fmt-row">
+                    <button style="width: 40%;" class="button-reset fmt-left" type="reset">Re-fill</button>
+                    <a href="error404.html"><button style="width:40%" class="button-reset fmt-right" type="button">Forgot?</button></a>
+                </div>
+                <br/><br/>
+            </div>
+            </form>
         </div>
     </body>
 </html>

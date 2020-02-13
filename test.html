@@ -9,289 +9,268 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href="css/fmt.css">
+        <link rel = "stylesheet" href="css/side_nav.css">
+        <link rel = "stylesheet" href="css/main_setup.css">
         <link rel="icon" href="images/ic_launcher.png">
+        <script src="script/default.js"></script>
     </head>
+<style>
+    .back-ground{
+    background: url('images/schemBackGround.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: fill;
+    height: 100%;
+    background-color: #000;
+}.moonImage{
+    background: url('images/Moon.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+    background-size: 50%;
+}
+.sunImage{
+    background: url('images/sunIconSmall.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    background-position-y: top;
+}
+.headImage{
+    background: url('images/schemesterLightMockupRealHorizontal20Percent.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+}
 
-    <style>
-        html{
-            scroll-behavior: smooth;
-            position: relative;
-            top:0;
-            bottom:0;
-            left:0;
-            right:0;
-        }
-        .description{
-            font-family: 'Poppins', sans-serif;
-            font-size: 20px;
-        }
-        a{
-            text-decoration: none;
-        }
-        
-        .display-large{
-            font-family: 'Poppins', sans-serif;
-            font-size: 62px;
-            text-align: left;
-            font-weight:  bold;
-            padding-left: 22px;
-        }
-        .display-med{
-            font-family: 'Poppins', sans-serif;
-            font-size: 34px;
-            font-weight:  bold;
-        }
-        .sub-text{
-            font-family: 'Poppins', sans-serif;
-            font-size: 44px;
-        }
-        .display-small{
-            font-family: 'Poppins', sans-serif;
-            font-size: 28px;
-            
-        }
-        .action-text{
-            font-family: 'Poppins', sans-serif;
-            font-size: 28px;
-        }
-        .back-ground{
-            background: url('images/schemBackGround.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-            background-color: #000;
-        }
-        .navigator{
-            padding: 12px;
-        }
-        .headImage{
-            background: url('images/schemesterLightMockupRealHorizontal20Percent.svg');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-position-y: top;
-        }
-        .moonImage{
-            background: url('images/Moon.svg');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-position-y: top;
-            background-size: 50%;
-        }
-        .sunImage{
-            background: url('images/sunIconSmall.svg');
-            background-repeat: no-repeat;
-            background-size: 50%;
-            background-position: right;
-            background-position-y: top;
-        }
-    </style>
-    <body>
-    <div  class="back-ground fmt-hide-large fmt-col">
-        <div class="fmt-top navigator " id="nav">
-            <a href="#row0">
-            <span class="fmt-left fmt-ripple-soft">
-            <img src="images/schemestericonupdated-jazz.svg" width="50px"/>
-            </span>
+</style>
+        <div id="menu" class="sidenav sub-text fmt-shadow">
+            <span class="sub-text" style="color:white; opacity: 0.2;">Navigate</span>
+            <a href="#"  onclick="menu_close()" style="background-color: #2a7fffff;" id="homeTab">Home</a>
+            <a href="authloginpage.html">Auth login</a>
+            <br/>
+            <span class="sub-text" style="color:white; opacity: 0.2;">Users</span>
+            <a href="error404.html">Student</a>
+            <a href="error404.html">Teacher</a>
+            <br/>
+            <span class="sub-text" style="color:white; opacity: 0.2;">Explore</span>
+            <a href="error404.html">Structure</a>
+            <a href="#row9">About</a>
+            <br/>
+            <span class="sub-text" style="color:white; opacity: 0.2;">Platform</span>
+            <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk" id="androidTab">Android</a>
+            <a href="error404.html">iOS</a>
+
+            <a href="javascript:void(0)" class="closebtn" onclick="menu_close()">&times;</a>
+        </div>
+    <body class="back-ground fmt-hide-large"  onscroll="menu_close()"> 
+        <div class="fmt-bottom navigator" id="nav">
+            <a href="#" class="fmt-right fmt-ripple-soft" id="menu_icon" onclick="menu_open()">
+                <img src="images/schemestericonupdated-jazz.svg" width="50px"/>
             </a>
         </div>
+        <div class="fmt-col" id="main_frame" onclick="menu_close()" >
+            <div class="fmt-row sunImage" style="padding-top: 22mm;" id="row0" onclick="menu_close()">
+                <p class="display-large" style="color:white;">
+                    Your<br />schedule,<br/>simplified.
+                </p>
+            </div>
 
-        <div class="fmt-row sunImage" style="padding-top: 22mm;" id="row0">
-            <p class="display-large" style="color:white;">
-                Your<br />schedule,<br/>simplified.
-            </p>
-        </div>
-
-        <div class="fmt-row action-text" style="color:white; padding-right: 32px; padding-left: 32px;padding-top: 32px;" id="row1">
-            <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk">
-            <span class="fmt-btn fmt-ripple-soft fmt-left" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;">
-                Download
-            </span>
-            </a>
-            <span class="fmt-btn fmt-right fmt-ripple-soft" style=" padding: 12px 24px 12px 24px;border-radius: 12px;">
-                <a href="#row2">How?</a>
-            </span>
-        </div>
-        <div class="fmt-center fmt-row" style="margin-top: 24mm;padding-top: 24mm;" id="row2">
-            <span style="color:white">
-                Presenting
-            </span>
-            <br /><br />
-            <span class="action-text" style="color:white; font-weight: 400;">
-                Schemester
-            </span>
-            <br /><br />
-            <object type="image/svg+xml" data="images/schemesterLightMockupReal.svg" width="50%"></object>
-            <br />
-            <span class="description" style="color:white;">
-                <p style="padding-left: 33px; padding-right: 33px;">Schemester is a minimalistic approach to redefine the way you access your timetable.
-                </p>
-            </span>
-        </div>
-        <div class="fmt-row" style="margin-top: 14mm;" id="row3">
-            <p class="display-large" style="color:white">
-                The <br />app you<br/>wished for.
-            </p>
-        </div>
-        <div class="fmt-row" style="padding-right: 22px;" id="row4">
-            <div class="fmt-col s3 fmt-left">
-                <img src="images/schemesterLightMockupRealFullScreenRightHalf.svg" width="100%" alt="Sorry if not displaying"/>
-            </div>
-            <div class="fmt-right fmt-col s8" style="vertical-align: middle;">
-                <div class="sub-text" style="color: white;">
-                    <p>Simply Accessible</p>
-                </div>
-                <div class="description" style="color: white;">
-                    <p> With simplicity and user friendliness as the core values during development,
-                        the result is a seamless and hassle free UI.</p>
-                </div>
-            </div>
-        </div>
-        <div class="fmt-row" style="padding-left: 22px;" id="row4">
-            <div class="fmt-col s3 fmt-right">
-                <object class="fmt-right" type="image/svg+xml" data="images/schemesterLightMockupRealFullScreenLeftHalf.svg" width="70px"></object>
-            </div>
-            <div class="fmt-left fmt-col s9" style="vertical-align: middle;">
-                <div class="sub-text" style="color: white;">
-                    <p>Neat & Clean.</p>
-                </div>
-                <div class="description" style="color: white;">
-                    <p> The app features a Clean, Intuitive and Accessible UI that focusses on getting the job done.</p>
-                    <br/>
-                    <p>Everything will always be under your finger tips.</p>
-                </div>
-            </div>
-        </div>
-        <div class="fmt-row moonImage" style="margin-top: 14mm;" id="row5">
-            <p class="display-large fmt-left" style="color:white">
-                Feels <br />better with<br/>dark mode.
-            </p>
-            <div class="fmt-center">
-            <object type="image/svg+xml" data="images/schemesterDarkMockupReal.svg" width="50%"></object>
-            </div>
-            <div class="description fmt-center" style="color: white;">
-                <p>Reducing strain on eye<br/>+<br/>Glossy looks</p>
-            </div>
-        </div>
-        <div class="fmt-row fmt-center" style="margin-top: 14mm;" id="row6">
-            <p class="display-med" style="color:white">
-                Additionally
-            </p>
-            <div class="display-small" style="color: white;">
-                <br/>
-                Smooth login
-                <br/><br/>
-                <object type="image/svg+xml" data="images/schemesterLightMockupRealStartUpLogin.svg" width="50%"></object>
-                <br/>
-                <p class="description">
-                    Just asking what's actually needed.<br/>No form filling.
-                </p>
-            </div>
-            <div class="display-small"style="color: white;">
-                <br/><br/>
-                Live tracking
-                <br/><br/>
-                <object type="image/svg+xml" data="images/schemesterLightMockupRealHalf.svg" width="50%"></object>
-                <br/>
-                <p class="description">
-                    No More Scrambling for Schedules!<br/>
-                    With live schedule tracking, you can view the ongoing classes and labs,<br/>in real time.
-                </p>
-            </div>
-            <div class="display-small"style="color: white;">
-                <br/><br/>
-                Privacy guaranteed
-                <br/><br/>
-                <object type="image/svg+xml" data="images/schemesterLightMockupRealSettings.svg" width="50%"></object>
-                <br/>
-                <p class="description">
-                    No explicit permissions required for normal functioning,<br/>assuring privacy.
-                </p>
-            </div>
-        </div>
-        <div id="row7">
-            <p class="display-med fmt-center" style="color:white">
-                And much more.
-            </p>
-        </div>
-        <div class="fmt-row" style="margin-top: 14mm;" id="row8">
-            <p class="display-large" style="color:white;">
-                People<br />humming<br/>about this.
-            </p>
-            <div class="fmt-center fmt-card fmt-shadow" style="background-color: #1c4eff;border-radius: 22px 22px 0px 22px; color: white; margin: 44px;padding: 22px 18px 22px 18px;">
-                <div>
-                    <p class="display-small">Great initiative! Loved this application!"</p>   
-                </div>
-                <div>
-                    <p class="description" style="text-align: right;">- Jasvinder Mehla,<br><span style="font-size: 12px;">Student, DBC DU (2020)</span></p>   
-                </div>
-            </div>
-        </div>
-        
-        <div class="fmt-row" style="margin-top: 14mm;" id="row9">
-            <br/><br/>
-            <div class="display-large headImage" style="color:white;">
-                So,<br />what is<br/> this actually?
-                <br/><br/>
-            </div>
-            <div class="fmt-row fmt-center">
-                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                    A project
-                </div>
-                <p class="fmt-center description" style="color: white;padding: 22px;">
-                    targeting students of Deshbandhu College, University of Delhi<br/>
-                    Initally for Physics Hons. students of 2018 batch.
-                </p>
-                <br/><br/>
-                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                    For the purpose
-                </div>
-                <p class="fmt-center description" style="color: white;padding: 22px;">
-                    of making schedule management easy and impressive,<br/> abandoning classical way of providing and following college schedule.
-                    <br/>Making it easier for both students and teachers to comprehend according to time table.
-                </p>
-                <br/><br/>
-                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                    An initiative
-                </div>
-                <object class="" type="image/svg+xml" data="images/bulbIcon.svg" width="50%"></object>
-                <p class="fmt-center description" style="color: white;padding: 22px;">
-                    by a student among the targeted audience<br/>namely <a href="https://www.github.com/ranjanistic/" class="fmt-hover-blue" style="color: aqua;">Priyanshu Ranjan</a>.
-                </p>
-                <br/><br/>
-                <div class="display-small fmt-center" style="color: white;font-size: 44px;">
-                    With support
-                </div>
-                <br/><br/>
-
-                <img src="images/person_1.jpg" class="fmt-circle fmt-shadow" width="50%"/>                
-                <p class="fmt-center description" style="color: white;padding-left: 22px;padding-right: 22px;">
-                    from <a href="https://www.github.com/darkmodelabs" class="fmt-hover-blue" style="color:aqua">Dark mode labs</a>
-                </p>
-            </div>
-        </div>
-        <br/><br/>
-        
-        <div class="fmt-center" id="rowend">
-            <div>
+            <div class="fmt-row action-text" style="color:white; padding-right: 32px; padding-left: 32px;padding-top: 32px;" id="row1">
                 <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk">
-                    <span class="fmt-btn fmt-ripple-soft action-text" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;">
-                        Download<br/>Schemester
-                    </span>
+                <span class="fmt-btn fmt-ripple-soft fmt-left" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;">
+                    Download
+                </span>
                 </a>
-                <br/><br/>
-                <span class="description" style="color: white;">
-                For Android 5+ devices only.
+                <span class="fmt-btn fmt-right fmt-ripple-soft" style=" padding: 12px 24px 12px 24px;border-radius: 12px;">
+                    <a href="#row2">How?</a>
                 </span>
             </div>
+            <div class="fmt-center fmt-row" style="margin-top: 24mm;padding-top: 24mm;" id="row2">
+                <span style="color:white">
+                    Presenting
+                </span>
+                <br /><br />
+                <span class="action-text" style="color:white; font-weight: 400;">
+                    Schemester
+                </span>
+                <br /><br />
+                <object type="image/svg+xml" data="images/schemesterLightMockupReal.svg" width="50%"></object>
+                <br />
+                <span class="description" style="color:white;">
+                    <p style="padding-left: 33px; padding-right: 33px;">Schemester is a minimalistic approach to redefine the way you access your timetable.
+                    </p>
+                </span>
+            </div>
+            <div class="fmt-row" style="margin-top: 14mm;" id="row3">
+                <p class="display-large" style="color:white">
+                    The <br />app you<br/>wished for.
+                </p>
+            </div>
+            <div class="fmt-row" style="padding-right: 22px;" id="row4">
+                <div class="fmt-col s3 fmt-left">
+                    <object class="fmt-right" type="image/svg+xml" data="images/schemesterLightMockupRealFullScreenRighthalf.svg" width="150%"></object>
+                </div>
+                <div class="fmt-right fmt-col s8" style="vertical-align: middle;">
+                    <div class="sub-text" style="color: white;">
+                        <p>Simply Accessible</p>
+                    </div>
+                    <div class="description" style="color: white;">
+                        <p> With simplicity and user friendliness as the core values during development,
+                            the result is a seamless and hassle free UI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fmt-row" style="padding-left: 22px;" id="row4">
+                <div class="fmt-col s3 fmt-right">
+                    <object class="fmt-right" type="image/svg+xml" data="images/schemesterLightMockupRealFullScreenLeftHalf.svg" width="90%"></object>
+                </div>
+                <div class="fmt-left fmt-col s9" style="vertical-align: middle;">
+                    <div class="sub-text" style="color: white;">
+                        <p>Neat & Clean.</p>
+                    </div>
+                    <div class="description" style="color: white;">
+                        <p> The app features a Clean, Intuitive and Accessible UI that focusses on getting the job done.</p>
+                        <br/>
+                        <p>Everything will always be under your finger tips.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fmt-row moonImage" style="margin-top: 14mm;" id="row5">
+                <p class="display-large fmt-left" style="color:white">
+                    Feels <br />better with<br/>dark mode.
+                </p>
+                <div class="fmt-center">
+                <object type="image/svg+xml" data="images/schemesterDarkMockupReal.svg" width="50%"></object>
+                </div>
+                <div class="description fmt-center" style="color: white;">
+                    <p>Reducing strain on eye<br/>+<br/>Glossy looks</p>
+                </div>
+            </div>
+            <div class="fmt-row fmt-center" style="margin-top: 14mm;" id="row6">
+                <p class="display-med" style="color:white">
+                    Additionally
+                </p>
+                <div class="display-small" style="color: white;">
+                    <br/>
+                    Smooth login
+                    <br/><br/>
+                    <object type="image/svg+xml" data="images/schemesterLightMockupRealStartUpLogin.svg" width="50%"></object>
+                    <br/>
+                    <p class="description">
+                        Just asking what's actually needed.<br/>No form filling.
+                    </p>
+                </div>
+                <div class="display-small"style="color: white;">
+                    <br/><br/>
+                    Live tracking
+                    <br/><br/>
+                    <object type="image/svg+xml" data="images/schemesterLightMockupRealHalf.svg" width="50%"></object>
+                    <br/>
+                    <p class="description">
+                        No More Scrambling for Schedules!<br/>
+                        With live schedule tracking, you can view the ongoing classes and labs,<br/>in real time.
+                    </p>
+                </div>
+                <div class="display-small"style="color: white;">
+                    <br/><br/>
+                    Privacy guaranteed
+                    <br/><br/>
+                    <object type="image/svg+xml" data="images/schemesterLightMockupRealSettings.svg" width="50%"></object>
+                    <br/>
+                    <p class="description">
+                        No explicit permissions required for normal functioning,<br/>assuring privacy.
+                    </p>
+                </div>
+            </div>
+            <div id="row7">
+                <p class="display-med fmt-center" style="color:white">
+                    And much more.
+                </p>
+            </div>
+            <div class="fmt-row" style="margin-top: 14mm;" id="row8">
+                <p class="display-large" style="color:white;">
+                    People<br />humming<br/>about this.
+                </p>
+                <div class="fmt-center fmt-card fmt-shadow" style="background-color: rgb(81, 104, 187);border-radius: 22px 22px 0px 22px; color: white; margin: 44px;padding: 22px 18px 22px 18px;">
+                    <div>
+                        <p class="display-small">Great initiative! Loved this application!"</p>   
+                    </div>
+                    <div>
+                        <p class="description" style="text-align: right;">- Jasvinder Mehla,<br><span style="font-size: 12px;">Student, DBC DU (2020)</span></p>   
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fmt-row" style="margin-top: 14mm;" id="row9">
+                <br/><br/>
+                <div class="display-large headImage" style="color:white;">
+                    So,<br />what is<br/> this actually?
+                    <br/><br/>
+                </div>
+                <div class="fmt-row fmt-center">
+                    <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                        A project
+                    </div>
+                    <p class="fmt-center description" style="color: white;padding: 22px;">
+                        targeting students of Deshbandhu College, University of Delhi<br/>
+                        Initally for Physics Hons. students of 2018 batch.
+                        <br/>
+                        <a href="error404.html" class="fmt-right fmt-hover-blue" style="color: aqua;margin-top: 12px;">Further details</a>
+                        </p>
+                    <br/><br/>
+                    <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                        For the purpose
+                    </div>
+                    <p class="fmt-center description" style="color: white;padding: 22px;">
+                        of making schedule management easy and impressive,<br/> abandoning classical way of providing and following college schedule.
+                        <br/>Making it easier for both students and teachers to comprehend according to time table.
+                    <br/>
+                    <a href="error404.html" class=" fmt-right fmt-hover-blue" style="color: aqua;margin-top: 12px;">See the structure</a>
+                    </p>
+                    <br/><br/>
+                    <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                        An initiative
+                    </div>
+                    <object class="" type="image/svg+xml" data="images/bulbIcon.svg" width="50%"></object>
+                    <p class="fmt-center description" style="color: white;padding: 22px;">
+                        by a student among the targeted audience<br/>namely <a href="https://www.github.com/ranjanistic/" class="fmt-hover-blue" style="color: aqua;">Priyanshu Ranjan</a>.
+                    </p>
+                    <br/><br/>
+                    <div class="display-small fmt-center" style="color: white;font-size: 44px;">
+                        With support
+                    </div>
+                    <br/><br/>
+
+                    <img src="images/person_1.jpg" class="fmt-circle fmt-shadow" width="50%"/>                
+                    <p class="fmt-center description" style="color: white;padding-left: 22px;padding-right: 22px;">
+                        from <a href="https://www.github.com/darkmodelabs" class="fmt-hover-blue" style="color:aqua">Dark mode labs</a>
+                    </p>
+                </div>
+            </div>
             <br/><br/>
-            <div>
-            <span class="fmt-center">
-                <img src="images/schemestericonupdated-jazz.svg" width="200px" class="fmt-center"/>    
-            </span>
-            <br/><br/>
-            <br/><br/>
+            
+            <div class="fmt-center" id="rowend">
+                <div>
+                    <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk">
+                        <span class="fmt-btn fmt-ripple-soft action-text" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;">
+                            Download<br/>Schemester
+                        </span>
+                    </a>
+                    <br/><br/>
+                    <span class="description" style="color: white;">
+                    For Android 5+ devices only.
+                    </span>
+                </div>
+                <br/><br/>
+                <div>
+                <span class="fmt-center">
+                    <img src="images/schemestericonupdated-jazz.svg" width="200px" class="fmt-center"/>    
+                </span>
+                <br/><br/>
+                <br/><br/>
+                </div>
             </div>
         </div>
-    </div>
     </body>
 </html>

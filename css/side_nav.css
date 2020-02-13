@@ -1,0 +1,42 @@
+/* The side navigation menu */
+.sidenav {
+    height: fit-content; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00112b;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    border-bottom-right-radius: 22px;
+    border-top-right-radius: 22px;
+    padding-top: 60px;
+    padding-bottom: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  
+  /* When you mouse over the navigation links, change their color */
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main_frame {
+    transition: margin-left .8s;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
