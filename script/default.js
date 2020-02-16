@@ -1,7 +1,7 @@
 /* Open when someone clicks on the span element */
 function menu_open() {
-    document.getElementById("menu").style.width = "40%";
-    document.getElementById("main_frame").style.marginLeft = "30%";
+    document.getElementById("menu").style.width = "55%";
+    //document.getElementById("main_frame").style.marginLeft = "0";
     document.getElementById("main_frame").style.zIndex = "-1";
     document.getElementById("main_frame").style.opacity = "0.4";
 
@@ -10,7 +10,7 @@ function menu_open() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function menu_close() {
     document.getElementById("menu").style.width = "0";
-    document.getElementById("main_frame").style.marginLeft = "0";
+    //document.getElementById("main_frame").style.marginLeft = "0";
     document.getElementById("main_frame").style.opacity = "1";
     document.getElementById("main_frame").style.zIndex = "1";
 }
