@@ -7,6 +7,9 @@ html{
     left:0;
     right:0;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .description{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -51,14 +54,23 @@ a{
     position: fixed;
     z-index: 0;
     padding: 12px;
+    top:0;
+}
+button:hover{
+    border-radius: 80px;
+    transition:0.3s;
 }
 fieldset{
-    border-radius: 12px;
+    border-radius: 0px;
     border-color: white;
     border-width: 4px;
     padding: 8px 12px 8px 12px;
     background-color: transparent;
     color: white;
+    transition: 0.5s;
+}
+fieldset:hover{
+    border-radius: 22px;
 }
 
 legend{
@@ -67,9 +79,9 @@ legend{
     font-size: 16px;
     letter-spacing: 1px;
 }
+
 input{
     padding:0px 0px 10px 0px;
-    
     caret-color: white;
     font-size: 22px;
     border-radius: 12px;
@@ -97,7 +109,6 @@ select{
     font-family: 'Poppins', sans-serif;
 }
 select:focus{
-    border: 0px solid red;
     border-color: #fff transparent transparent transparent;
     color: white;
 }

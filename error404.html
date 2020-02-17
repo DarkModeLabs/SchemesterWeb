@@ -1,67 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Error 404 | Schemester</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-16LE">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
-        <link rel = "stylesheet" href="css/side_nav.css">
-        <link rel = "stylesheet" href="css/fmt.css">
-        <link rel = "stylesheet" href="css/main_setup.css">
-        <meta name="theme-color" content="#2196f3">
-        <script src="script/default.js"></script>
-    </head>
-    <style>
-        .back-ground{
-            background: url('images/schemBackGround.svg');
-            background-repeat: no-repeat;
-            background-size: fill;
-            height: 100%;
-            background-color: #000;
-        }
-    </style>
-        <div id="menu" class="sidenav sub-text"> 
-            <span class="sub-text" style="color:white; opacity: 0.2;">Navigate</span>
-            <a href="test.html"id="homeTab">Home</a>
-            <a href="authloginpage.html">Auth login</a>
-            <br/>
-            <span class="sub-text" style="color:white; opacity: 0.2;">Users</span>
-            <a href="error404.html">Student</a>
-            <a href="error404.html">Teacher</a>
-            <br/>
-            <span class="sub-text" style="color:white; opacity: 0.2;">Explore</span>
-            <a href="error404.html">Structure</a>
-            <a href="test.html#row9">About</a>
-            <br/>
-            <span class="sub-text" style="color:white; opacity: 0.2;">Platform</span>
-            <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk" id="androidTab">Android</a>
-            <a href="error404.html">iOS</a>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets\images\ic_launcher.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-16LE">
+    <meta name="theme-color" content="#2196f3">
+    <link rel = "stylesheet" href="css/main_setup.css">
+    <link rel = "stylesheet" href="css/fmt.css">
+    <link rel = "stylesheet" href="css/side_nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+    <script src="assets/script/default.js"></script>
+    <title>Unavailabe | Schemester</title>
+  </head>
+  <style>
+    .back-ground{
+        background: url('images/schemBackGround.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-color: #000;
+    }
+    .back-ground-l{
+        background: url('images/schemBackGround.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-color: #000;
+    }
+    .error-image{
+      background:  url('images/searchingErrorDisplay.svg');
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: right;
+      background-position-y: top;
+    }
+    .error-image-large{
+      background:  url('images/searchingErrorDisplay.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+</style>
+<div id="menu" class="sidenav sub-text"> 
+  <a href="javascript:void(0)" class="closebtn" onclick="menu_close()">&times;</a>
+  <span class="sub-text" style="color:white; opacity: 0.2;">Navigate</span>
+  <a href="" class="item" id="homeTab">Home</a>
+  <a href="index.html" class="item">Auth login</a>
+  <br/>
+  <span class="sub-text" style="color:white; opacity: 0.2;">Users</span>
+  <a href="error404.html" class="item">Student</a>
+  <a href="error404.html" class="item">Teacher</a>
+  <br/>
+  <span class="sub-text" style="color:white; opacity: 0.2;">Explore</span>
+  <a href="error404.html" class="item">Structure</a>
+  <a href="test.html#row9" class="item">About</a>
+  <br/>
+  <span class="sub-text" style="color:white; opacity: 0.2;">Platform</span>
+  <a class="item" href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk" id="androidTab">Android</a>
+  <a href="error" class="item">iOS</a>
+</div>
 
-            <a href="javascript:void(0)" class="closebtn" onclick="menu_close()">&times;</a>
+  <body class="back-ground">
+      <span class=" fmt-right navigator" id="nav">
+        <span class="fmt-right fmt-ripple-soft fmt-shadow fmt-circle" style="background: transparent;" id="menu_icon" onclick="menu_open()">
+            <img src="images/schemestericonupdated-jazz.svg" width="50px"/>
+        </span>
+      </span>
+      
+      <div  class="fmt-col fmt-hide-large fmt-hide-medium error-image" id="main_frame" style="padding-top: 22mm;padding-bottom: 22mm;">
+        <div class="fmt-row"  id="row0" onclick="menu_close()">
+            <p class="display-large" style="color:white;">
+                Oops!<br />That's<br/>Error 404.
+            </p>
         </div>
-    <body class="back-ground fmt-hide-large"  onscroll="menu_close()"> 
-        <div class="fmt-bottom navigator" id="nav" >
-            <span class="fmt-right fmt-ripple-soft" id="menu_icon" onclick="menu_open()">
-                <img src="images/schemestericonupdated-jazz.svg" width="50px"/>
-            </span>
+        <br /><br />
+        <div class="display-small" style="color:white;padding: 22px;text-align: right; font-weight: 400;">
+            We are working upon this right now.<br/>Stay tuned!
         </div>
-        <div  class="fmt-col" id="main_frame" >
-            <div class="fmt-row sunImage" style="padding-top: 22mm;" id="row0" onclick="menu_close()">
-                <p class="display-large" style="color:white;">
-                    Oops!<br />That's<br/>Error 404.
-                </p>
-            </div>
-            <br /><br />
-            <div class="display-small" style="color:white;padding: 22px;text-align: right; font-weight: 400;">
-                We are working upon this right now.<br/>Stay tuned!
-            </div>
-            <div class="fmt-center">
-            <span class="fmt-btn fmt-ripple-soft fmt-center action-text" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;" onclick="menu_open()">
-                    Menu
-            </span>
+        <div class="fmt-center">
+          <span class="fmt-btn fmt-ripple-soft fmt-center action-text" style="background-color: white; color:#2196f3;border-radius: 12px; padding: 12px 24px 12px 24px;" onclick="menu_open()">
+                  Menu
+          </span>
         </div>
-        </div>
-    </body>
+      </div>
+  </body>
 </html>

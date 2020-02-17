@@ -46,26 +46,26 @@
 </style>
         <div id="menu" class="sidenav sub-text fmt-shadow">
             <span class="sub-text" style="color:white; opacity: 0.2;">Navigate</span>
-            <a href="#"  onclick="menu_close()" style="background-color: #2a7fffff;" id="homeTab">Home</a>
-            <a href="authloginpage.html">Auth login</a>
+            <a href="#"  onclick="menu_close()" class="selected-item" id="homeTab">Home</a>
+            <a href="https://project-schemester.web.app/" class="item">Auth login</a>
             <br/>
             <span class="sub-text" style="color:white; opacity: 0.2;">Users</span>
-            <a href="error404.html">Student</a>
-            <a href="error404.html">Teacher</a>
+            <a href="error404.html" class="item">Student</a>
+            <a href="error404.html" class="item">Teacher</a>
             <br/>
             <span class="sub-text" style="color:white; opacity: 0.2;">Explore</span>
-            <a href="error404.html">Structure</a>
-            <a href="#row9">About</a>
+            <a href="error404.html" class="item">Structure</a>
+            <a href="#row9" class="item">About</a>
             <br/>
             <span class="sub-text" style="color:white; opacity: 0.2;">Platform</span>
-            <a href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk" id="androidTab">Android</a>
-            <a href="error404.html">iOS</a>
+            <a class="item" href="https://www.github.com/DarkModeLabs/SchemesterWeb/raw/master/org.timetable.schemester-1.2-infant-stage2.apk" id="androidTab">Android</a>
+            <a class="item" href="error404.html">iOS</a>
 
             <a href="javascript:void(0)" class="closebtn" onclick="menu_close()">&times;</a>
         </div>
     <body class="back-ground fmt-hide-large"  onscroll="menu_close()"> 
         <div class="fmt-bottom navigator" id="nav">
-            <a href="#" class="fmt-right fmt-ripple-soft" id="menu_icon" onclick="menu_open()">
+            <a href="#" class="fmt-left fmt-ripple-soft" id="menu_icon" onclick="menu_open()">
                 <img src="images/schemestericonupdated-jazz.svg" width="50px"/>
             </a>
         </div>

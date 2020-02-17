@@ -1,6 +1,6 @@
 /* The side navigation menu */
 .sidenav {
-    height: fit-content; /* 100% Full-height */
+    height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -24,12 +24,35 @@
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
   }
-  
+  .item{
+    background-color: transparent;
+    color: white;
+  }
+  .selected-item{
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    background-color: #2196f3;
+    color: white;
+  }
+
+.closebtn:hover{
+  background-color: white;
+  color:blue;
+  transition:0.3s;
+}
+
+  .item:hover{
+    transition: 0.2s;
+    background-color: white;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    color: black;
+  }
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main_frame {
     transition: margin-left .8s;

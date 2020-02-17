@@ -1,6 +1,6 @@
 /* Open when someone clicks on the span element */
 function menu_open() {
-    document.getElementById("menu").style.width = "55%";
+    document.getElementById("menu").style.width = "250px";
     //document.getElementById("main_frame").style.marginLeft = "0";
     document.getElementById("main_frame").style.zIndex = "-1";
     document.getElementById("main_frame").style.opacity = "0.4";
