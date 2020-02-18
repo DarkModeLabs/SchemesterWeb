@@ -6,7 +6,13 @@ function menu_open() {
     document.getElementById("main_frame").style.opacity = "0.4";
 
 }
-  
+ 
+function onDownloadClick(){
+  document.getElementById("download").innerHTML = "Hold up...";
+  document.getElementById("download").style.opacity = "0.5";
+}
+
+
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function menu_close() {
     document.getElementById("menu").style.width = "0";
@@ -16,13 +22,3 @@ function menu_close() {
 }
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.bottom = "0";
-  } else {
-    document.getElementById("nav").style.bottom = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
