@@ -113,6 +113,16 @@ select:focus{
     border-color: #fff transparent transparent transparent;
     color: white;
 }
+.linker{
+    font-family: 'Poppins';
+    color: yellow;
+  transition: 0.5s ease;
+  }.linker:hover{
+    color: orange;
+  }
+  .linker:focus{
+    color:darkgoldenrod;
+  }
 option{
     padding:10px 10px 10px 10px;
     width: 12px;
